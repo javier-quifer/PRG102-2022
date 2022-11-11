@@ -16,7 +16,25 @@ for j in range(n):
     mat.append(fila)
     print()
 
-print(mat)
+#print(mat)
+#B) Mostrar la matriz, elemento por elemento
+n = len(mat)
+for j in range(n):
+    m = len(mat[j])
+    for k in range(m):
+        if j==0 and k==0:
+            print('┌  ', end='')
+
+        if j>0 and k==0:
+            print('|  ', end='')
+
+        print(mat[j][k], end='  ')
+        if j==0 and k==m-1:
+            print('┐', end='')
+    print()
+
+
+
 
 # Mostrar la matriz diagonal
 
