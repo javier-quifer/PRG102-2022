@@ -1,9 +1,10 @@
 # Métodos de búsqueda
 # Búsqueda secuencial. Clase 21 de Nov.
+from carla import leer_vector
 
-vec = ['Ana', 'Pedro', 'Carla', 'Juan']
+vec = leer_vector()
 
-buscado = 'Ana'
+buscado = input('Introd. el nombre a buscar')
 esta = False
 
 for dato in vec:
